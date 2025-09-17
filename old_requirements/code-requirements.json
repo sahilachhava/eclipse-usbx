@@ -1,0 +1,398 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 15,
+  "total": 15,
+  "issues": [
+    {
+      "id": "30001",
+      "key": "REQ-C001",
+      "fields": {
+        "summary": "System Initialization Architecture",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide separate initialization functions for host (_ux_host_stack_initialize) and device (_ux_device_stack_initialize) stacks with memory pool management.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30002",
+      "key": "REQ-C002",
+      "fields": {
+        "summary": "Error Handling Framework",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must implement comprehensive error checking with configurable UX_*_ENABLE_ERROR_CHECKING macros and standardized error codes (0x15-0x77 range).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30003",
+      "key": "REQ-C003",
+      "fields": {
+        "summary": "Multi-Device Support Configuration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support configurable maximum devices (UX_MAX_DEVICES default 4, max 127) with overflow protection compile-time assertions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30004",
+      "key": "REQ-C004",
+      "fields": {
+        "summary": "Thread Stack Size Management",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide configurable thread stack sizes for enumeration (UX_HOST_ENUM_THREAD_STACK_SIZE), HCD (UX_HOST_HCD_THREAD_STACK_SIZE), and class-specific threads.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30005",
+      "key": "REQ-C005",
+      "fields": {
+        "summary": "USB Class Driver Registration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support registration of multiple USB class drivers with UX_MAX_CLASS_DRIVER limit and 63-character class name length limit.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30006",
+      "key": "REQ-C006",
+      "fields": {
+        "summary": "Host Controller Driver Support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support multiple HCD types including OHCI, EHCI, STM32, MUSB, PIC32, and simulation host controllers with 32-entry periodic tree structure.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30007",
+      "key": "REQ-C007",
+      "fields": {
+        "summary": "USB Class Implementation Coverage",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must implement host classes (HUB, Printer, Storage, HID, Audio, CDC-ACM/DLC/ECM, PIMA, ASIX) and device classes (Storage, CDC-ACM, HID, RNDIS, DFU, Audio, Video, CCID).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30008",
+      "key": "REQ-C008",
+      "fields": {
+        "summary": "Descriptor Structure Management",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide structured parsing for all USB descriptor types with predefined byte layouts for device, configuration, interface, endpoint, and class-specific descriptors.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30009",
+      "key": "REQ-C009",
+      "fields": {
+        "summary": "Standalone Operation Mode",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support standalone operation (UX_STANDALONE) that removes RTOS dependencies from both host and device stacks when configured.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30010",
+      "key": "REQ-C010",
+      "fields": {
+        "summary": "Transfer Request Architecture",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must implement transfer request queuing system with support for control, bulk, interrupt, and isochronous transfer types.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30011",
+      "key": "REQ-C011",
+      "fields": {
+        "summary": "Memory Pool Segregation",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support separate regular and cache-safe memory pools for DMA-coherent operations on cache-enabled processors.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30012",
+      "key": "REQ-C012",
+      "fields": {
+        "summary": "USB State Machine Implementation",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must implement USB state machines with UX_STATE_* definitions including idle, reset, next, wait, exit, and error states.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30013",
+      "key": "REQ-C013",
+      "fields": {
+        "summary": "Endpoint Management System",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide endpoint descriptor management with configurable endpoint entries, length validation, and endpoint chain updates.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30014",
+      "key": "REQ-C014",
+      "fields": {
+        "summary": "Trace and Debug Support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must implement comprehensive tracing system with UX_TRACE_* events for host/device stack operations, class activities, and error conditions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30015",
+      "key": "REQ-C015",
+      "fields": {
+        "summary": "Compile-Time Configuration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support extensive compile-time configuration through ux_user.h with configurable timeouts, buffer sizes, class inclusions, and feature enables.",
+        "verifiableByCodeOnly": true
+      }
+    }
+  ]
+}
