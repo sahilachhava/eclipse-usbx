@@ -1,0 +1,840 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 32,
+  "total": 32,
+  "issues": [
+    {
+      "id": "30001",
+      "key": "REQ-CODE-001",
+      "fields": {
+        "summary": "System Initialization Architecture",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide separate initialization functions for host (_ux_host_stack_initialize) and device (_ux_device_stack_initialize) stacks with memory pool management.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30002",
+      "key": "REQ-CODE-002",
+      "fields": {
+        "summary": "Error Handling Framework",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must implement comprehensive error checking with configurable UX_*_ENABLE_ERROR_CHECKING macros and standardized error codes (0x15-0x77 range).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30003",
+      "key": "REQ-CODE-003",
+      "fields": {
+        "summary": "Multi-Device Support Configuration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support configurable maximum devices (UX_MAX_DEVICES default 4, max 127) with overflow protection compile-time assertions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30004",
+      "key": "REQ-CODE-004",
+      "fields": {
+        "summary": "Thread Stack Size Management",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide configurable thread stack sizes for enumeration (UX_HOST_ENUM_THREAD_STACK_SIZE), HCD (UX_HOST_HCD_THREAD_STACK_SIZE), and class-specific threads.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30005",
+      "key": "REQ-CODE-005",
+      "fields": {
+        "summary": "USB Class Driver Registration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support registration of multiple USB class drivers with UX_MAX_CLASS_DRIVER limit and 63-character class name length limit.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30006",
+      "key": "REQ-CODE-006",
+      "fields": {
+        "summary": "Host Controller Driver Support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support multiple HCD types including OHCI, EHCI, STM32, MUSB, PIC32, and simulation host controllers with 32-entry periodic tree structure.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30007",
+      "key": "REQ-CODE-007",
+      "fields": {
+        "summary": "USB Class Implementation Coverage",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must implement host classes (HUB, Printer, Storage, HID, Audio, CDC-ACM/DLC/ECM, PIMA, ASIX) and device classes (Storage, CDC-ACM, HID, RNDIS, DFU, Audio, Video, CCID).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30008",
+      "key": "REQ-CODE-008",
+      "fields": {
+        "summary": "Descriptor Structure Management",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide structured parsing for all USB descriptor types with predefined byte layouts for device, configuration, interface, endpoint, and class-specific descriptors.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30009",
+      "key": "REQ-CODE-009",
+      "fields": {
+        "summary": "Standalone Operation Mode",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support standalone operation (UX_STANDALONE) that removes RTOS dependencies from both host and device stacks when configured.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30010",
+      "key": "REQ-CODE-010",
+      "fields": {
+        "summary": "Transfer Request Architecture",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must implement transfer request queuing system with support for control, bulk, interrupt, and isochronous transfer types.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30011",
+      "key": "REQ-CODE-011",
+      "fields": {
+        "summary": "Memory Pool Segregation",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support separate regular and cache-safe memory pools for DMA-coherent operations on cache-enabled processors.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30012",
+      "key": "REQ-CODE-012",
+      "fields": {
+        "summary": "USB State Machine Implementation",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must implement USB state machines with UX_STATE_* definitions including idle, reset, next, wait, exit, and error states.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30013",
+      "key": "REQ-CODE-013",
+      "fields": {
+        "summary": "Endpoint Management System",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide endpoint descriptor management with configurable endpoint entries, length validation, and endpoint chain updates.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30014",
+      "key": "REQ-CODE-014",
+      "fields": {
+        "summary": "Trace and Debug Support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must implement comprehensive tracing system with UX_TRACE_* events for host/device stack operations, class activities, and error conditions.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "30015",
+      "key": "REQ-CODE-015",
+      "fields": {
+        "summary": "Compile-Time Configuration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support extensive compile-time configuration through ux_user.h with configurable timeouts, buffer sizes, class inclusions, and feature enables.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20001",
+      "key": "REQ-DOC-001",
+      "fields": {
+        "summary": "USB Stack Support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide high-performance USB host, device, and on-the-go (OTG) embedded stack functionality.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20002",
+      "key": "REQ-DOC-002",
+      "fields": {
+        "summary": "ThreadX Integration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must be fully integrated with Eclipse ThreadX RTOS for real-time embedded applications.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20003",
+      "key": "REQ-DOC-003",
+      "fields": {
+        "summary": "Multi-Architecture Support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support multiple ARM processor architectures including Cortex-M, Cortex-A series, and ARM9.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20004",
+      "key": "REQ-DOC-004",
+      "fields": {
+        "summary": "USB Class Support",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support standard USB device classes including HID, CDC, Mass Storage, and other common classes.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20005",
+      "key": "REQ-DOC-005",
+      "fields": {
+        "summary": "Small Footprint Design",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must be designed with minimal memory footprint suitable for deeply embedded applications.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20006",
+      "key": "REQ-DOC-006",
+      "fields": {
+        "summary": "CMake Build System",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide CMake-based build system supporting various MCUs and host systems with Ninja generator.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20007",
+      "key": "REQ-DOC-007",
+      "fields": {
+        "summary": "Toolchain Compatibility",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must support ARM GNU Toolchain for arm-none-eabi with CMake version 3.0 or later.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20008",
+      "key": "REQ-DOC-008",
+      "fields": {
+        "summary": "Composable Integration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must be integrable into device applications using git submodules and CMake add_subdirectory().",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20009",
+      "key": "REQ-DOC-009",
+      "fields": {
+        "summary": "Static Library Build",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must be buildable as standalone static library for build verification and testing.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20010",
+      "key": "REQ-DOC-010",
+      "fields": {
+        "summary": "Semiconductor SDK Integration",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must integrate with semiconductor SDKs from STMicroelectronics, NXP, Renesas, and Microchip.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20011",
+      "key": "REQ-DOC-011",
+      "fields": {
+        "summary": "Issue Templates",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Project must provide structured templates for bug reports, feature requests, and hardware support requests.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20012",
+      "key": "REQ-DOC-012",
+      "fields": {
+        "summary": "Contribution Guidelines",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Project must follow Eclipse Foundation Development Process with Eclipse Contributor Agreement (ECA) requirements.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20013",
+      "key": "REQ-DOC-013",
+      "fields": {
+        "summary": "Version Support Policy",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Project must maintain clear version support policy with currently supported versions (6.4.x series).",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20014",
+      "key": "REQ-DOC-014",
+      "fields": {
+        "summary": "Security Reporting",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Project must provide clear vulnerability reporting process through Eclipse Foundation Security Team.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20015",
+      "key": "REQ-DOC-015",
+      "fields": {
+        "summary": "MIT License",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must be distributed under MIT License terms for permissive open-source usage.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20016",
+      "key": "REQ-DOC-016",
+      "fields": {
+        "summary": "Eclipse IP Policy",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "Project must operate under Eclipse Foundation IP Policy and Development Process governance.",
+        "verifiableByCodeOnly": true
+      }
+    },
+    {
+      "id": "20017",
+      "key": "REQ-DOC-017",
+      "fields": {
+        "summary": "Safety Certification",
+        "issuetype": {
+          "id": "100",
+          "description": "Software design requirement",
+          "name": "Requirement"
+        },
+        "status": {
+          "id": "approved",
+          "name": "Approved"
+        },
+        "assignee": {
+          "displayName": "Unassigned",
+          "accountId": "unassigned"
+        },
+        "reporter": {
+          "displayName": "System",
+          "accountId": "system"
+        },
+        "description": "USBX must provide vendor-neutral, safety certified OS components for real-time applications.",
+        "verifiableByCodeOnly": true
+      }
+    }
+  ]
+}
